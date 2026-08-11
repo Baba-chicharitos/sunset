@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Questionnaire final concernant le séjour à Toulouse."
+    />
+
+    <title>Le verdict final</title>
+
+    <link rel="stylesheet" href="questionnaire.css" />
+
+    <script src="questionnaire.js" defer></script>
+  </head>
+
+  <body class="questionnaire-page">
+    <!-- Confettis de la dernière question -->
+    <canvas
+      class="confetti-canvas"
+      id="confetti-canvas"
+      aria-hidden="true"
+    ></canvas>
+
+    <main class="questionnaire-shell">
+      <!-- Question 1 -->
+      <section
+        class="quiz-screen quiz-screen--site is-active"
+        id="question-site"
+        data-screen="0"
+        aria-labelledby="site-title"
+      >
+        <article class="question-card">
+          <p class="question-number">Question 01 / 03</p>
+
+          <p class="question-emoji" aria-hidden="true">💻</p>
+
+          <h1 id="site-title">Est-ce que tu as aimé le site internet ?</h1>
+
+          <p class="question-description">
+            Une réponse honnête est éxigée.
+          </p>
+
+          <div class="question-actions">
+            <button
+              class="answer-button answer-button--yes"
+              id="site-yes"
+              type="button"
+            >
+              Oui, il est incroyable
+            </button>
+
+            <button
+              class="answer-button answer-button--no"
+              id="site-no"
+              type="button"
+            >
+              Non
+            </button>
+          </div>
+
+          <p
+            class="question-status"
+            id="site-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </article>
+      </section>
+
+      <!-- Question 2 -->
+      <section
+        class="quiz-screen quiz-screen--programme"
+        id="question-programme"
+        data-screen="1"
+        aria-labelledby="programme-title"
+      >
+        <article class="question-card">
+          <p class="question-number">Question 02 / 03</p>
+
+          <p class="question-emoji" aria-hidden="true">🏔️</p>
+
+          <h1 id="programme-title">Est-ce que tu as aimé le programme ?</h1>
+
+          <p class="question-description">
+            Toulouse, la montagne, les thermes, le cinéma, la nourriture.
+          </p>
+
+          <div class="question-actions question-actions--three">
+            <button
+              class="answer-button answer-button--yes"
+              id="programme-yes"
+              type="button"
+            >
+              Oui, je valide
+            </button>
+
+            <button
+              class="answer-button answer-button--no"
+              id="programme-no"
+              type="button"
+            >
+              Non
+            </button>
+
+            <button
+              class="answer-button answer-button--suggestions"
+              id="suggestions-button"
+              type="button"
+            >
+              J’ai des suggestions
+            </button>
+          </div>
+
+          <p
+            class="question-status"
+            id="programme-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </article>
+      </section>
+
+      <!-- Question 3 -->
+      <section
+        class="quiz-screen quiz-screen--final"
+        id="question-final"
+        data-screen="2"
+        aria-labelledby="final-title"
+      >
+        <article class="question-card question-card--final">
+          <p class="question-number">Question finale</p>
+
+          <p class="question-emoji" aria-hidden="true">🧳</p>
+
+          <h1 id="final-title">
+            Delphine, est-ce que tu acceptes ce séjour avec moi à Toulouse ?
+          </h1>
+
+          <p class="question-description" id="final-description">
+            Merci de sélectionner la réponse qui te paraît la plus
+            raisonnable.
+          </p>
+
+          <div class="final-answer-zone" id="final-answer-zone">
+            <button
+              class="answer-button answer-button--yes final-yes"
+              id="final-yes"
+              type="button"
+            >
+              Oui, j’accepte
+            </            raisonnable.
+          </p>
+
+          <button>
+
+            <button
+              class="answer-button answer-button--no final-no"
+              id="final-no"
+              type="button"
+            >
+              Non
+            </button>
+          </div>
+
+          <p
+            class="question-status"
+            id="final-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Popup des suggestions -->
+    <div
+      class="contact-modal"
+      id="contact-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="contact-modal-title"
+      aria-hidden="true"
+    >
+      <div class="contact-modal__backdrop" data-close-modal></div>
+
+      <article class="contact-modal__content">
+        <button
+          class="contact-modal__close"
+          id="close-contact-modal"
+          type="button"
+          aria-label="Fermer la fenêtre"
+        >
+          ×
+        </button>
+
+        <p class="contact-modal__label">Service réclamations</p>
+
+        <h2 id="contact-modal-title">Transmettre une suggestion</h2>
+
+        <p class="contact-modal__description">
+          Plusieurs canaux de communication hautement professionnels sont à
+          ta disposition.
+        </p>
+
+        <div class="contact-list">
+          <!-- Remplace les textes ci-dessous par tes véritables coordonnées. -->
+
+          <div class="contact-pill contact-pill--snapchat">
+            <span>Snapchat</span>
+            <strong>baptiste_sr</strong>
+          </div>
+
+          <div class="contact-pill contact-pill--instagram">
+            <span>Instagram</span>
+            <strong>baptiste_srrn_</strong>
+          </div>
+
+          <div class="contact-pill contact-pill--phone">
+            <span>Téléphone</span>
+            <strong>06 03 40 43 95</strong>
+          </div>
+
+          <div class="contact-pill contact-pill--email">
+            <span>Mail</span>
+            <strong>baptiste.ser09@gmail.com</strong>
+          </div>
+
+          <div class="contact-pill contact-pill--onlyfans">
+            <span>OnlyFans</span>
+            <strong>@baptiste_chicharitosss</strong>
+          </div>
+        </div>
+
+        <p class="contact-modal__note">
+          Délai de traitement des réclamations : entre 2 minutes et 14 jours.
+        </p>
+      </article>
+    </div>
+  </body>
+</html>

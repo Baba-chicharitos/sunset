@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Le programme d'un séjour hivernal entre Toulouse et Ax-les-Thermes."
+    />
+
+    <title>Le programme du séjour</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body class="programme-page">
+    <!-- Navigation fixe située à droite -->
+    <nav class="days-navigation" aria-label="Navigation entre les journées">
+      <a
+        class="days-navigation__link active"
+        href="#jour-1"
+        data-section="jour-1"
+        aria-label="Aller au jour 1"
+      >
+        <span class="days-navigation__text">Before</span>
+        <span class="days-navigation__dot"></span>
+      </a>
+
+      <a
+        class="days-navigation__link"
+        href="#jour-2"
+        data-section="jour-2"
+        aria-label="Aller au jour 2"
+      >
+        <span class="days-navigation__text">After</span>
+        <span class="days-navigation__dot"></span>
+      </a>
+
+      <a
+        class="days-navigation__link"
+        href="#jour-3"
+        data-section="jour-3"
+        aria-label="Aller au jour 3"
+      >
+        <span class="days-navigation__text">Lendemain</span>
+        <span class="days-navigation__dot"></span>
+      </a>
+    </nav>
+
+    <main class="programme">
+      <!-- Jour 1 -->
+      <section
+        class="day"
+        id="jour-1"
+        style="--day-image: url(images/rivieresejour.jpg)"
+      >
+        <div class="day__overlay"></div>
+
+        <article class="day__content">
+          <p class="day__number">Jour 01</p>
+
+          <h1>Arrivée à Toulouse</h1>
+
+          <p class="day__introduction">
+            Une arrivée selon tes desirs et tes horaires préférentiels, rien ne
+            presse tout va bien !
+          </p>
+
+          <div class="day__schedule">
+            <div class="schedule-item">
+              <span class="schedule-item__time">Arrivée</span>
+
+              <div>
+                <h2>Récupération à la gare ou pas</h2>
+
+                <p>
+                  Je viens te récupérer directement à la gare dans une voiture
+                  de MEGA LUXE, ma fiat punto. Sauf si tu décides de venir
+                  directement dans ton hébergement ! (Pas très français j'avoue)
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <span class="schedule-item__time">Aprem</span>
+
+              <div>
+                <h2>Baignade à la rivière</h2>
+
+                <p>
+                  Baignade dans une rivière à Labarthe-sur-Lèze, un endroit très
+                  agréable pour prendre un max d'UV et se baigner !
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <span class="schedule-item__time">Étape vitale</span>
+
+              <div>
+                <h2>Direction le sunset</h2>
+
+                <p>
+                  Ni une ni deux, on se prépare pour aller voir le coucher de
+                  soleil dans un endroit surprise ! Car à partir de ce moment là
+                  c'est moi qui prend tout en main ! Seule chose à savoir ? On
+                  mange la bas :)
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="day__scroll-hint" aria-hidden="true">
+          <span>After sunset</span>
+          <span class="day__arrow">↓</span>
+        </div>
+      </section>
+
+      <!-- Jour 2 -->
+      <section
+        class="day"
+        id="jour-2"
+        style="--day-image: url(images/hotelsejour.jpg)"
+      >
+        <div class="day__overlay"></div>
+
+        <article class="day__content">
+          <p class="day__number">After sunset</p>
+
+          <h1>Direction l'hébergement</h1>
+
+          <p class="day__introduction">
+            Après ce magnifique coucher de soleil, nous nous dirigeons vers
+            notre hébergement pour profiter d'une soirée all-inclusive.
+          </p>
+
+          <div class="day__schedule">
+            <div class="schedule-item">
+              <span class="schedule-item__time">Première</span>
+
+              <div>
+                <h2>Une bonne grosse douche</h2>
+
+                <p>
+                  Après une journée pareil faut bien se laver, je sais pas si
+                  c'est habituel chez toi mais c'est mieux en général tu verras
+                  !
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <span class="schedule-item__time">Seconde</span>
+
+              <div>
+                <h2>Le repas</h2>
+
+                <p>
+                  Il faudra me faire savoir quel plat tu aimes, en sachant que
+                  je suis un grand spécialiste des pâtes carbo et du risotto
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <span class="schedule-item__time">Troisième</span>
+
+              <div>
+                <h2>TELLEMENT TROP D'OPTIONS</h2>
+
+                <p>
+                  Cinéma sur une petite télé, jeux de société en tous genre,
+                  massage des épaules ou du dos (désolé je sais faire que ça) ou
+                  tout en un coup !
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="day__scroll-hint" aria-hidden="true">
+          <span>Jour suivant</span>
+          <span class="day__arrow">↓</span>
+        </div>
+      </section>
+
+      <!-- Jour 3 -->
+      <section
+        class="day"
+        id="jour-3"
+        style="--day-image: url(images/aftersunsetsejour.jpg)"
+      >
+        <div class="day__overlay"></div>
+
+        <article class="day__content">
+          <p class="day__number">Jour 03</p>
+
+          <h1>Chill et improvisation</h1>
+
+          <p class="day__introduction">
+            Une journée volontairement moins organisée, parce qu’un bon
+            programme doit aussi prévoir de ne rien prévoir.
+          </p>
+
+          <div class="day__schedule">
+            <div class="schedule-item">
+              <span class="schedule-item__time">Matin</span>
+
+              <div>
+                <h2>Matinée tranquille</h2>
+
+                <p>
+                  Réveil à 8h, impossible. Réveil à 9h, possible. Réveil à 10h,
+                  raisonnable. Réveil à 11h, bon faut se lever là. Réveil à 12h,
+                  NON MAIS CA VA OUI.
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <span class="schedule-item__time">Petit dèj</span>
+
+              <div>
+                <h2>Apporter au lit</h2>
+
+                <p>
+                  Un petit déjeuner bien mérité qui sera apporté directement au
+                  lit par les soins du major d'homme (moi et c'est toujours pas
+                  français ma phrase)
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <span class="schedule-item__time">Impro</span>
+
+              <div>
+                <h2>Que de l'improvisation sur le coup</h2>
+
+                <p>
+                  On verra sur le moment, pose pas de questions, tu repars quand
+                  tu veux et fais ce que tu veux
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="day__scroll-hint" aria-hidden="true">
+          <a href="questionnaire.html" class="lien">Questionnaire</a>
+          <span class="day__arrow">↓</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
