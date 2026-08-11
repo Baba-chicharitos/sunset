@@ -690,3 +690,28 @@ body {
     text-decoration: none;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .oneday-page .day__scroll-hint {
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    bottom: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .oneday-page .lien {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
